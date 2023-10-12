@@ -1,0 +1,198 @@
+body, html {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  height: 100px;
+  border-radius: 2px;
+}
+
+.headerr {
+  flex: 1;
+  text-align: left;
+}
+
+.headerr h1, .headerr p {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  color: rgb(253, 253, 253)
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.nav-item, .nav-itemm {
+  margin-right: 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  background: linear-gradient(to right, rgba(249, 242, 227, 0.5), rgba(255, 255, 255, 0));
+}
+
+.nav-itemm:hover, .nav-item:hover {
+  text-decoration: none;
+  background-color: white;
+  color: rgb(103, 171, 217);
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-family: 'Roboto Slab', serif;
+  color: antiquewhite;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 80px;
+}
+
+main p {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 40px;
+  font-size: 60px;
+  background: linear-gradient(to bottom, rgb(214, 218, 168), rgb(236, 235, 193));
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.gambar {
+  display: flex;
+  align-items: center;
+}
+
+.gambar img {
+  margin-right: 20px;
+  margin-left: 60px;
+}
+
+.gambar a {
+  border: 2px solid white;
+  border-radius: 20px;
+  background: rgb(124, 23, 23);
+  padding: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: bold;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #232323;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+}
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .headerr {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 10px;
+    text-align: left;
+  }
+  
+  nav {
+    display: flex;
+    align-items: left;
+    margin-left: 0;
+    padding-left: 40px;
+  
+  }
+  
+  .nav-item, .nav-itemm {
+  margin-right: 15px;
+  padding: 5px;
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  background: linear-gradient(to right, rgba(249, 242, 227, 0.5), rgba(255, 255, 255, 0));
+}
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  main h2, main p {
+    margin: 0;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  
+  main p {
+    font-size: 20px;
+  }
+  .gambar {
+    align-items: left;
+    justify-content: left;
+}
+.gambar img {
+    margin-right: 0;
+    margin-left: 0;
+}
+.gambar a {
+    margin-right: 0;
+}
+
+}
